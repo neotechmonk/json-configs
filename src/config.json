@@ -1,0 +1,13 @@
+{
+    "simple_config_text": "text_one_liner",
+    "simple_config_int": 1,
+    "simple_config_dec": 9.1,
+    "nested_config":{
+        "nested_level_1": "level_1",
+        "nested_level_2":{
+            "nested_level_2_text": "nested_level_2_text",
+            "nested_level_2_num": 2,
+            "nested_level_2_dec": 2.2
+        }
+    }
+}
