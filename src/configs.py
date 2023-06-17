@@ -8,8 +8,10 @@ class Configs():
 
         self.read_config()
 
-    def read_config(self):
-        self.simple_config_text = self.config["simple_config_text"]
 
+
+    def read_config(self):
+        for key, value in self.config.items():
+            setattr(self, key, value)
 
 
