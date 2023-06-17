@@ -23,4 +23,4 @@ def test_config_contents(config):
         config.simple_config_text == "text_one_liner"
     ])
 
-
+    
