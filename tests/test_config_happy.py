@@ -6,11 +6,11 @@ import pytest
 from src.configs import Configs
 
 
-@pytest.fixture
+@pytest.fixture (scope="function")
 def config_file_name():
     return "./tests/assets/config_clean.json"
 
-@pytest.fixture
+@pytest.fixture(scope="function")
 def config(config_file_name):
     yield Configs(config_file_name).config
 
