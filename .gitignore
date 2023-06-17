@@ -1,0 +1,52 @@
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Virtual environment
+venv/
+env/
+env.bak/
+env1/
+venv1/
+envs/
+
+# Logs
+*.log
+
+# Environment variables
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints/
+
+# Package distribution / build
+dist/
+build/
+*.egg-info/
+
+# Development specific
+*.swp
+*.bak
+*.tmp
+*.sublime-workspace
+
+# IDE specific
+.idea/
+.vscode/
+*.pydevproject
+
+# Database
+*.db
+*.sqlite3
+
+# Testing
+.tox/
+.coverage
+htmlcov/
+
+# Sphinx documentation
+docs/_build/
+
+# System files
+.DS_Store
+Thumbs.db
