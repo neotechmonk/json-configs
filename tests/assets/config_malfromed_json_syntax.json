@@ -1,0 +1,7 @@
+{
+    "simple_config_text": "text_one_liner",
+    "simple_config_int": 1,
+    "simple_config_dec": 9.1,
+    "nested_config":{}
+
+}

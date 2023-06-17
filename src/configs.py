@@ -8,9 +8,10 @@ class Configs():
         try:
             with open(config_file) as f:
                 config_data = json.load(f)
-                
             self.config = Box(config_data)
         except FileNotFoundError:
-            print(f"Error: Config file '{config_file}' not found.")
+            raise FileNotFoundError(f"Config file '{config_file}' not found.")
         except json.JSONDecodeError as e:
-            print(f"Error: Invalid JSON format in config file. {str(e)}")
+            raise ValueError(f"Invalid JSON format in config file: {str(e)}")
+        except Exception as e: 
+             raise Exception(f"Unknown Error in loading config file: {str(e)}")
